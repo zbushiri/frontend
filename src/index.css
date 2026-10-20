@@ -1,4 +1,18 @@
+:root {
+  --paper: #ffffff;
+  --text: #213b59;
+  --blue: #4c759b;
+  --line: #b9ccdd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  min-height: 100vh;
   margin: 0;
+  background: linear-gradient(#bed1e5, #7899be);
+  color: var(--text);
   font-family: Arial, sans-serif;
 }
