@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.19ba64c2.css",
-    "main.js": "/frontend/static/js/main.88a2fa8b.js",
+    "main.css": "/frontend/static/css/main.189c4d71.css",
+    "main.js": "/frontend/static/js/main.5653789a.js",
+    "static/media/what.jpg": "/frontend/static/media/what.56aebf6e4647eca8ae50.jpg",
+    "static/media/me.jpg": "/frontend/static/media/me.ac3a9b247b5032e58ba0.jpg",
+    "static/media/bookshelf.avif": "/frontend/static/media/bookshelf.83029e26303390e01249.avif",
+    "static/media/soon.jpg": "/frontend/static/media/soon.1193edca52ee103e7e7e.jpg",
+    "static/media/rezero.jpg": "/frontend/static/media/rezero.99ff1e83278b2d4c4838.jpg",
+    "static/media/crunchyroll.png": "/frontend/static/media/crunchyroll.d7879329c8264289b6db.png",
+    "static/media/vigilantes.jpg": "/frontend/static/media/vigilantes.dfe3687df637fae5e089.jpg",
+    "static/media/black-clover.jpg": "/frontend/static/media/black-clover.8b514953ec0ccfe76673.jpg",
+    "static/media/fall-2026.jpg": "/frontend/static/media/fall-2026.ab7dc6a523afee2c7153.jpg",
+    "static/media/summer-2026.jpg": "/frontend/static/media/summer-2026.4f62f324f329078e1b1e.jpg",
+    "static/media/frieren.jpg": "/frontend/static/media/frieren.9f165ca43fa2cb855346.jpg",
+    "static/media/dandadan.jpg": "/frontend/static/media/dandadan.09251998647801700e13.jpg",
     "index.html": "/frontend/index.html",
-    "main.19ba64c2.css.map": "/frontend/static/css/main.19ba64c2.css.map",
-    "main.88a2fa8b.js.map": "/frontend/static/js/main.88a2fa8b.js.map"
+    "main.189c4d71.css.map": "/frontend/static/css/main.189c4d71.css.map",
+    "main.5653789a.js.map": "/frontend/static/js/main.5653789a.js.map"
   },
   "entrypoints": [
-    "static/css/main.19ba64c2.css",
-    "static/js/main.88a2fa8b.js"
+    "static/css/main.189c4d71.css",
+    "static/js/main.5653789a.js"
   ]
 }
