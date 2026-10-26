@@ -1,0 +1,11 @@
+.page-title { margin: 50px 0 35px; }
+
+.page-title h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 66px);
+}
+
+.page-title .intro {
+  max-width: 720px;
+  font-size: 18px;
+}

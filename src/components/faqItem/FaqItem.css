@@ -1,0 +1,13 @@
+.faq {
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: bold;
+}

@@ -1,0 +1,12 @@
+/* Questions */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+/* Phone */
+@media (max-width: 650px) {
+  .faq-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,23 @@
+/* About me */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.about-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Phone */
+@media (max-width: 650px) {
+  .about-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,7 @@
+/* Trailers */
+.trailer-list { grid-template-columns: repeat(2, 1fr); }
+
+/* Phone */
+@media (max-width: 650px) {
+  .trailer-list { grid-template-columns: 1fr; }
+}

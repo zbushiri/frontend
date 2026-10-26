@@ -1,0 +1,20 @@
+/* Welcome */
+.home-hero {
+  display: flex;
+  align-items: center;
+  min-height: 420px;
+  padding: 5%;
+  border-radius: 20px;
+  background: var(--soft);
+}
+
+.home-hero div { max-width: 620px; }
+.home-hero h1 { font-size: clamp(42px, 5vw, 62px); }
+.home-hero p { font-size: 18px; }
+
+/* Page links */
+.home-links {
+  display: grid;
+  gap: 28px;
+}
+

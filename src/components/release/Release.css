@@ -1,0 +1,16 @@
+.release {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+
+.release img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.release div { padding: 22px; }
+.release h2 { margin-top: 0; }

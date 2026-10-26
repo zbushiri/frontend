@@ -1,0 +1,11 @@
+.release-list { grid-template-columns: repeat(4, 1fr); }
+
+/* Tablet */
+@media (max-width: 800px) {
+  .release-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Phone */
+@media (max-width: 550px) {
+  .release-list { grid-template-columns: 1fr; }
+}
