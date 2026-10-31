@@ -16,7 +16,7 @@ const ContactForm = () => {
 
     const form = event.target;
     const formData = new FormData(form);
-    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY);
+    formData.append("access_key", "34f630b6-fbd1-4cb3-8d8b-631d61c7f8f6");
 
     /* Waits for the email service. */
     try {

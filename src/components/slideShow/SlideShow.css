@@ -21,6 +21,11 @@
   object-fit: cover;
 }
 
+.slide img.contain {
+  background: var(--soft);
+  object-fit: contain;
+}
+
 .slide div { align-self: center; padding: 35px; }
 .slide h3 { margin: 0; font-size: 30px; }
 

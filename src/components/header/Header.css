@@ -16,11 +16,12 @@
 /* Small screens */
 @media (max-width: 980px) {
   .main-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 15px;
-    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    min-height: 0;
+    padding: 20px 0;
   }
 
-  .header-top { width: 100%; }
+  .header-top { width: auto; }
 }

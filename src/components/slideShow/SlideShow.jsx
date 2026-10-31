@@ -20,7 +20,7 @@ const SlideShow = ({ slides }) => {
 
       {/* Current slide */}
       <Link className="slide" to={slide.path}>
-        <img src={slide.image} alt={slide.title} />
+        <img className={slide.fit} src={slide.image} alt={slide.title} />
         <div>
           <p className="eyebrow">Explore</p>
           <h3>{slide.title}</h3>
