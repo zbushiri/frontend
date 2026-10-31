@@ -1,5 +1,6 @@
 import "./Trailer.css";
 
+/** Shows one trailer picture and description. */
 const Trailer = (props) => {
   return (
     <article className="trailer">

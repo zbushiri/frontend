@@ -1,5 +1,6 @@
 import "./Release.css";
 
+/** Shows one upcoming release. */
 const Release = (props) => {
   return (
     <article className="release">

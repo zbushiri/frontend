@@ -10,6 +10,7 @@ import Trailers from "./pages/trailers/Trailers";
 import About from "./pages/about/About";
 import Faq from "./pages/faq/Faq";
 
+/** Connects each URL to its React page. */
 const App = () => {
   return (
     <HashRouter>
@@ -27,6 +28,7 @@ const App = () => {
   );
 };
 
+/* Starts the React site. */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

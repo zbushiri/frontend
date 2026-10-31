@@ -1,5 +1,6 @@
 import "./Card.css";
 
+/** Shows one reusable information card. */
 const Card = ({ image, title, text }) => {
   return (
     <article className="card">

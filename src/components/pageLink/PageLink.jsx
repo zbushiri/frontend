@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./PageLink.css";
 
+/** Shows one large homepage link. */
 const PageLink = (props) => {
   return (
     <Link className="home-link" to={props.path}>

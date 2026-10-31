@@ -3,6 +3,7 @@ import { Cloud } from "lucide-react";
 import "./Header.css";
 import Navigation from "../navigation/Navigation";
 
+/** Shows the logo and navigation on every page. */
 const Header = () => {
   return (
     <header className="main-header">

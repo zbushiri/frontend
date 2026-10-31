@@ -1,5 +1,6 @@
 import "./Anime.css";
 
+/** Shows one anime item in the list. */
 const Anime = (props) => {
   return (
     <article className="anime">

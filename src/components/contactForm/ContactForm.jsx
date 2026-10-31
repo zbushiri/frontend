@@ -2,10 +2,13 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import "./ContactForm.css";
 
+/** Sends contact form messages without leaving the page. */
 const ContactForm = () => {
+  /* Stores the form message and button state. */
   const [result, setResult] = useState("");
   const [sending, setSending] = useState(false);
 
+  /* Sends the form to Web3Forms. */
   const sendEmail = async (event) => {
     event.preventDefault();
     setSending(true);
@@ -15,6 +18,7 @@ const ContactForm = () => {
     const formData = new FormData(form);
     formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY);
 
+    /* Waits for the email service. */
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -22,6 +26,7 @@ const ContactForm = () => {
       });
       const data = await response.json();
 
+      /* Shows a success or error message. */
       if (response.ok) {
         setResult("DING DING! Message sent to Cozy Corner!");
         toast.success("Message sent!");
@@ -36,10 +41,12 @@ const ContactForm = () => {
     }
 
     setSending(false);
+    /* Clears the message after one second. */
     setTimeout(() => setResult(""), 1000);
   };
 
   return (
+    /* Contact fields */
     <form className="contact-form" onSubmit={sendEmail}>
       <label htmlFor="contact-name">Name</label>
       <input id="contact-name" name="name" type="text" required />
