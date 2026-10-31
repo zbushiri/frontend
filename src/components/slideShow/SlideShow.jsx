@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Tooltip } from "react-tooltip";
 import "./SlideShow.css";
 
 /** Shows one slide at a time without a slideshow library. */
@@ -16,7 +15,7 @@ const SlideShow = ({ slides }) => {
   return (
     <div className="slideshow">
       {/* Previous button */}
-      <button onClick={previousSlide} aria-label="Previous slide" data-tooltip-id="slide-tip" data-tooltip-content="Previous slide">‹</button>
+      <button onClick={previousSlide} aria-label="Previous slide">‹</button>
 
       {/* Current slide */}
       <Link className="slide" to={slide.path}>
@@ -28,9 +27,8 @@ const SlideShow = ({ slides }) => {
         </div>
       </Link>
 
-      {/* Next button and tooltip */}
-      <button onClick={nextSlide} aria-label="Next slide" data-tooltip-id="slide-tip" data-tooltip-content="Next slide">›</button>
-      <Tooltip id="slide-tip" />
+      {/* Next button */}
+      <button onClick={nextSlide} aria-label="Next slide">›</button>
     </div>
   );
 };
