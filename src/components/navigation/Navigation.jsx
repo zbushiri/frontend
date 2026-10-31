@@ -1,17 +1,32 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 
 const Navigation = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <nav className="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><NavLink to="/anime">Anime Shelf</NavLink></li>
-        <li><NavLink to="/upcoming">Upcoming Releases</NavLink></li>
-        <li><NavLink to="/trailers">Trailer Room</NavLink></li>
-        <li><NavLink to="/about">About Me</NavLink></li>
-        <li><NavLink to="/faq">FAQ</NavLink></li>
-      </ul>
-    </nav>
+    <div className="nav-area">
+      <button
+        className="menu-button"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Open menu"
+        aria-expanded={menuOpen}
+      >
+        ☰
+      </button>
+
+      <nav className={`main-nav ${menuOpen ? "show-menu" : ""}`} aria-label="Main navigation">
+        <ul>
+          <li><NavLink to="/anime" onClick={closeMenu}>Anime Shelf</NavLink></li>
+          <li><NavLink to="/upcoming" onClick={closeMenu}>Upcoming Releases</NavLink></li>
+          <li><NavLink to="/trailers" onClick={closeMenu}>Trailer Room</NavLink></li>
+          <li><NavLink to="/about" onClick={closeMenu}>About Me</NavLink></li>
+          <li><NavLink to="/faq" onClick={closeMenu}>FAQ</NavLink></li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 

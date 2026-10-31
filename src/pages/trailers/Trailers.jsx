@@ -1,5 +1,6 @@
 import PageTitle from "../../components/pageTitle/PageTitle";
 import Trailer from "../../components/trailer/Trailer";
+import FeaturedTrailer from "../../components/featuredTrailer/FeaturedTrailer";
 import "./Trailers.css";
 import fall from "../../images/trailers/fall-2026.jpg";
 import blackClover from "../../images/trailers/black-clover.jpg";
@@ -18,6 +19,9 @@ const Trailers = () => {
         title="Trailer Room"
         text="See new anime trailers from Crunchyroll."
       />
+
+      {/* Video */}
+      <FeaturedTrailer />
 
       {/* Trailer cards */}
       <section className="cards trailer-list">

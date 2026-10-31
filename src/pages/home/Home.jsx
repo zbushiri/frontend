@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
 import PageLink from "../../components/pageLink/PageLink";
+import SlideShow from "../../components/slideShow/SlideShow";
 import bookshelf from "../../images/bookshelf.avif";
 import soon from "../../images/soon.jpg";
 import crunchyroll from "../../images/crunchyroll.png";
@@ -8,6 +9,14 @@ import me from "../../images/me.jpg";
 import what from "../../images/what.jpg";
 
 const Home = () => {
+  const slides = [
+    { path: "/anime", title: "Anime Shelf", text: "Find anime based on genres you enjoy.", image: bookshelf },
+    { path: "/upcoming", title: "Upcoming Releases", text: "See what is coming next.", image: soon },
+    { path: "/trailers", title: "Trailer Room", text: "See fresh trailers from Crunchyroll.", image: crunchyroll },
+    { path: "/about", title: "About Me", text: "Meet the person behind Cozy Corner.", image: me },
+    { path: "/faq", title: "FAQ", text: "Find answers to common questions.", image: what },
+  ];
+
   return (
     <div id="home" className="page">
       {/* Welcome */}
@@ -57,6 +66,12 @@ const Home = () => {
             image={what}
           />
         </div>
+      </section>
+
+      {/* Slideshow */}
+      <section>
+        <h2>More From Cozy Corner</h2>
+        <SlideShow slides={slides} />
       </section>
     </div>
   );

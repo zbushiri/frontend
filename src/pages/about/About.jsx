@@ -1,5 +1,6 @@
 import PageTitle from "../../components/pageTitle/PageTitle";
 import Card from "../../components/card/Card";
+import ContactForm from "../../components/contactForm/ContactForm";
 import { Hand } from "lucide-react";
 import "./About.css";
 import me from "../../images/me.jpg";
@@ -43,6 +44,12 @@ const About = () => {
             text="To keep recommendations and trailers together in one calm place."
           />
         </div>
+      </section>
+
+      {/* Contact form */}
+      <section>
+        <h2>Contact Me</h2>
+        <ContactForm />
       </section>
     </div>
   );

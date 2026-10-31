@@ -1,0 +1,45 @@
+/* Slideshow */
+.slideshow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+
+.slide img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.slide div { align-self: center; padding: 35px; }
+.slide h3 { margin: 0; font-size: 30px; }
+
+.slideshow button {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--blue);
+  color: white;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+/* Phone */
+@media (max-width: 650px) {
+  .slideshow { gap: 8px; }
+  .slide { grid-template-columns: 1fr; }
+  .slide img { height: 220px; }
+  .slide div { padding: 24px; }
+  .slideshow button { width: 38px; height: 38px; }
+}
