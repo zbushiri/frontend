@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Cloud } from "lucide-react";
 import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 import "./Footer.css";
 
 /** Shows the shared footer and social links. */
