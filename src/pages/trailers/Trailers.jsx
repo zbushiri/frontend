@@ -9,7 +9,7 @@ const Trailers = () => {
   const [error, setError] = useState(false);
   const server = window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "https://backend-2kbp.onrender.com";
+    : "https://backend-jcmr.onrender.com";
 
   /* Loads trailers from the server */
   useEffect(() => {
