@@ -39,7 +39,7 @@ const AnimeShelf = () => {
       <PageTitle
         eyebrow="Find your next favorite"
         title="Anime Shelf"
-        text="Choose a genre and explore a few anime recommendations."
+        text="Add anime and create your own shelf of shows you want to remember."
       />
 
       {/* Anime cards */}
