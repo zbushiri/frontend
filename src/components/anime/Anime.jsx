@@ -3,13 +3,13 @@ import "./Anime.css";
 /** Shows one anime item in the list. */
 const Anime = (props) => {
   return (
-    <article className="anime">
+    <button className="anime" onClick={props.onClick}>
       <img src={props.image} alt={props.title} />
-      <div>
+      <span>
         <h2>{props.title}</h2>
         <p>{props.genre}</p>
-      </div>
-    </article>
+      </span>
+    </button>
   );
 };
 

@@ -1,9 +1,16 @@
 .anime {
+  padding: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: var(--paper);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
 }
+
+.anime:hover { transform: translateY(-3px); }
 
 .anime img {
   display: block;
@@ -12,5 +19,5 @@
   object-fit: cover;
 }
 
-.anime div { padding: 22px; }
+.anime span { display: block; padding: 22px; }
 .anime h2 { margin-top: 0; }

@@ -1,0 +1,35 @@
+.anime-form-section {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+
+.anime-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.anime-form label { font-weight: bold; }
+
+.anime-form input, .anime-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.anime-form textarea { min-height: 100px; resize: vertical; }
+.wide-field, .anime-form .button, .anime-form p { grid-column: 1 / -1; }
+.anime-form .button { border: 0; cursor: pointer; }
+.form-success { color: #287a3c; }
+.form-error { color: #a12626; }
+
+@media (max-width: 650px) {
+  .anime-form { grid-template-columns: 1fr; }
+  .wide-field, .anime-form .button, .anime-form p { grid-column: auto; }
+}
