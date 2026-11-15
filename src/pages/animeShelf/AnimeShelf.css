@@ -1,4 +1,7 @@
+/* Anime cards */
 .anime-list { grid-template-columns: repeat(4, 1fr); }
+
+/* Server message */
 .anime-message { grid-column: 1 / -1; text-align: center; }
 
 /* Tablet */

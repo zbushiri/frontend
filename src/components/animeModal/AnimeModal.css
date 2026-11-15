@@ -1,3 +1,4 @@
+/* Dark page background */
 .modal-background {
   position: fixed;
   z-index: 10;
@@ -8,6 +9,7 @@
   background: #213b59cc;
 }
 
+/* Details box */
 .anime-modal {
   position: relative;
   display: grid;
@@ -25,6 +27,7 @@
 .anime-details { color: var(--blue); font-weight: bold; }
 .modal-close { position: absolute; top: 12px; right: 12px; cursor: pointer; }
 
+/* Phone layout */
 @media (max-width: 550px) {
   .anime-modal { grid-template-columns: 1fr; }
   .anime-modal img { height: 240px; }

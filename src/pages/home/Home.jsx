@@ -10,7 +10,7 @@ import what from "../../images/what.jpg";
 
 const Home = () => {
   const slides = [
-    { path: "/anime", title: "Anime Shelf", text: "Find anime based on genres you enjoy.", image: bookshelf },
+    { path: "/anime", title: "Anime Shelf", text: "Add anime and build your own shelf.", image: bookshelf },
     { path: "/upcoming", title: "Upcoming Releases", text: "See what is coming next.", image: soon },
     { path: "/trailers", title: "Trailer Room", text: "See fresh trailers from Crunchyroll.", image: crunchyroll },
     { path: "/about", title: "About Me", text: "Meet the person behind Cozy Corner.", image: me, fit: "contain" },
@@ -38,7 +38,7 @@ const Home = () => {
           <PageLink
             path="/anime"
             title="Anime Shelf"
-            text="Find anime based on genres you enjoy."
+            text="Add anime and build your own shelf."
             image={bookshelf}
           />
           <PageLink
